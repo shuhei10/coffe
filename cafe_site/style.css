@@ -6,17 +6,11 @@ body {
   color: #333;
 }
 
-￥ .site-header {
-  position: relative;
-}
-
 .hero {
-  background-image: url('photo/toa-heftiba-W6sqUYlJRiw-unsplash\ 1.png');
-  background-size: cover;
-  background-position: center;
+  background-image: url('photo/toa-heftiba-W6sqUYlJRiw-unsplash 1.png');
+  background-position: left top;
+  background-repeat: no-repeat;
   height: 100vh;
-  position: relative;
-  color: #333;
   overflow: hidden;
 }
 
@@ -39,45 +33,35 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
   justify-content: flex-start;
   height: 100%;
-  max-width: 900px;
-
   margin-left: 10%;
-
   margin-top: 100px;
 }
 
-
 .site-title {
-  font-size: 5rem;
-
+  font-size: 6.8rem;
   font-weight: bold;
   margin-bottom: 120px;
 }
 
-
 .catch-copy {
-  font-size: 2.5rem;
+  font-size: 3.4rem;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-
 .sub-copy {
-  font-size: 1rem;
+  font-size: 1.4rem;
   line-height: 1.8;
   color: #333;
 }
-
 
 .nav-container {
   position: absolute;
   top: 30px;
   right: 30px;
   z-index: 3;
-
 }
 
 .main-nav ul {
@@ -85,36 +69,34 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 30px;
-
+  gap: 20px;
 }
 
 .main-nav a {
   text-decoration: none;
-  color: #5a8b7b;
+  color: #839989;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 2.2rem;
 }
 
 /* セクション共通 */
 .section {
   padding: 40px 20px;
-  max-width: 1000px;
-  margin: 0 auto;
+  margin: 0 auto 0 150px;
 }
 
 .section-title {
-  font-size: 2.5rem;
+  font-size: 6.8rem;
   font-weight: bold;
   margin-bottom: 20px;
   color: #333;
 }
 
 .section-text {
-  font-size: 1rem;
+  font-size: 2.5rem;
   line-height: 1.8;
   margin-bottom: 40px;
-  color: #444;
+  color: #000;
 }
 
 .image-grid {
@@ -122,7 +104,6 @@ body {
   flex-direction: column;
   gap: 40px;
 }
-
 
 .top-images {
   display: grid;
@@ -145,102 +126,357 @@ body {
 }
 
 .bottom-images img {
-  width: 100%;
-  height: auto;
+  height: 303px;
   border-radius: 10px;
 }
 
-.menu {
-  padding: 60px 20px;
-}
-
 .menu-table {
-  margin: 0 auto 40px;
-  max-width: 600px;
+  margin: 0 auto 0 150px;
+  font-size: 2.8rem;
 }
 
-.menu-item {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: #333;
-  gap: 50px;
+.menu-table td {
+  padding: 15px 25px;
+  text-align: left;
+}
+
+.menu-table td:nth-child(2),
+.menu-table td:nth-child(4) {
+  text-align: right;
 }
 
 .menu-note {
-  font-size: 0.9rem;
-  text-align: center;
-  margin-bottom: 50px;
-  color: #666;
+  font-size: 2.2rem;
+  color: #4B4B4B;
+  margin-top: 50px;
 }
 
 .menu-gallery {
   display: flex;
   gap: 30px;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .menu-gallery-item {
-  width: 300px;
   text-align: center;
+  margin-bottom: 10vh;
 }
 
 .menu-gallery-item img {
-  width: 100%;
   border-radius: 10px;
   margin-bottom: 20px;
+  height: 484px;
 }
 
 .menu-gallery-item h3 {
-  font-size: 1.2rem;
+  font-size: 2.8rem;
   margin-bottom: 10px;
   font-weight: bold;
 }
 
 .menu-gallery-item p {
-  font-size: 0.9rem;
+  font-size: 1.7rem;
   line-height: 1.6;
+  width: 636px;
   color: #444;
+  text-align: left;
+}
+
+.interior-desin-text {
+  margin: 0 auto;
 }
 
 .barista-section {
-  position: relative;
-  background-image: url('photo/coffee-2591514_1280\ 1.png');
+  background-image: url('photo/coffee-2591514_1280 1.png');
   background-size: cover;
   background-position: center;
-  height: 400px;
-  color: #333;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0 5%;
+  height: 70vh;
   overflow: hidden;
 }
 
 .barista-content {
-  position: relative;
-  z-index: 2;
+  margin: 0 12vh;
 }
 
 .barista-title {
-  font-size: 2.5rem;
+  font-size: 6.8rem;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
 .barista-text {
-  font-size: 1rem;
+  font-size: 2.5rem;
   line-height: 1.8;
+  width: 89rem;
 }
 
 .barista-brand {
-  position: absolute;
-  right: 5%;
-  bottom: 5%;
-  font-size: 1.2rem;
+  font-size: 4.5rem;
   font-weight: bold;
   z-index: 2;
+  margin: 20vh 0 0 105vh;
+}
+
+/* ---------- ハンバーガーメニュー & 全画面メニュー ---------- */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 5;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #839989;
+  border-radius: 2px;
+}
+
+.fullscreen-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+    url('photo/caleb-_hnL_961xTk-unsplash 1.png');
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: brightness(0.7);
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.fullscreen-menu ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.fullscreen-menu li {
+  margin: 20px 0;
+}
+
+.fullscreen-menu a {
+  font-size: 3rem;
+  color: #839989;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid #839989;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 3rem;
+  color: #839989;
+  cursor: pointer;
+}
+
+/* アニメーション */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.fullscreen-menu.show {
+  display: flex;
+  animation: fadeIn 0.4s ease forwards;
+}
+
+/* ---------- レスポンシブ設定 ---------- */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .hero {
+    background-image: url('photo/toa-heftiba-W6sqUYlJRiw-unsplash 1.png');
+    background-position: center top;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 300px 259px;
+    height: 100vh;
+    background-size: contain;
+  }
+
+  .hero-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+    margin: 0;
+  }
+
+
+  .site-title {
+    display: none;
+  }
+
+
+  .catch-copy {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+
+  .catch-line1,
+  .catch-line2 {
+    display: block;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  .sub-copy {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    text-align: left;
+    max-width: 90%;
+  }
+
+
+  .section {
+    margin: 0;
+    padding: 20px 10px;
+  }
+
+  .section-title {
+    font-size: 1.7rem;
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  .tasty-text {
+    text-align: left;
+  }
+
+  .section-text {
+    font-size: 0.9rem;
+    line-height: 2.8rem;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    white-space: pre-line;
+  }
+
+  .image-grid {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .top-images,
+  .bottom-images {
+    display: block;
+    width: 100%;
+  }
+
+  .top-images img,
+  .bottom-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10vh;
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .menu-table {
+    margin: 0 auto;
+    font-size: 1.4rem;
+  }
+
+  .menu-table td {
+    padding: 15px 20px;
+  }
+
+  .menu-table .label,
+  .menu-table td:nth-child(3) {
+    display: none;
+  }
+
+  .menu-note {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .menu-gallery {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .menu-gallery-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .menu-gallery-item p {
+    text-align: center;
+    width: 100%;
+    font-size: 0.8rem;
+    line-height: 2.8rem;
+    white-space: pre-line;
+  }
+
+  .barista-section {
+    background-position: center top;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 398px 199px;
+    height: 100vh;
+    background-size: contain;
+  }
+
+  .barista-content {
+    margin: 0 10px;
+  }
+
+  .barista-title {
+    font-size: 1.7rem;
+  }
+
+  .barista-text {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  .barista-brand {
+    font-size: 1rem;
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
 }

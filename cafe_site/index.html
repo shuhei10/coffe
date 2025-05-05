@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,10 +17,26 @@
           </ul>
         </nav>
       </div>
+      <div class="hamburger" onclick="openMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="fullscreen-menu" id="fullscreenMenu">
+        <span class="close-btn" onclick="closeMenu()">×</span>
+        <ul>
+          <li><a href="#menu">メニュー</a></li>
+          <li><a href="#access">アクセス・営業時間</a></li>
+          <li><a href="#season">季節のおすすめ</a></li>
+        </ul>
+      </div>
       <div class="hero">
         <div class="hero-text">
           <h1 class="site-title">Cafe Lumière</h1>
-          <h2 class="catch-copy">日常のすぐそばにある、特別な一杯を。</h2>
+          <h2 class="catch-copy">
+            <span class="catch-line1">日常のすぐそばにある、</span><br>
+            <span class="catch-line2">特別な一杯を。</span>
+          </h2>
           <p class="sub-copy">
             心がほっとするような空間で、<br />
             丁寧に淹れたコーヒーと季節のスイーツを。<br />
@@ -31,20 +47,20 @@
     </header>
     <section class="section coffee">
       <h2 class="section-title">Tasty coffee</h2>
-      <p class="section-text">
-        素材にこだわった豆を使用し、バリスタが一杯ずつ丁寧にドリップ。<br />
-        Lumièreブレンドは、香り・コク・後味のバランスが取れた人気の一杯です。<br />
-        ホットでもアイスでも楽しめるよう、抽出方法も季節に合わせてご提供しています。
+      <p class=" tasty-text section-text">
+        素材にこだわった豆を使用し、バリスタが一杯ずつ<br />丁寧にドリップ。<br />
+        Lumièreブレンドは、香り・コク・後味のバランスが<br />取れた人気の一杯です。<br />
+        ホットでもアイスでも楽しめるよう、抽出方法も季<br />節に合わせてご提供しています。
       </p>
       <div class="image-grid">
         <div class="top-images">
           <img
-            class="coffee_room"
+            class="span-2 top-image"
             src="photo/kris-atomic-3b2tADGAWnU-unsplash 1.png"
             alt="コーヒー風景1"
           />
           <img
-            class="cappuccino"
+            class="top-image hide-on-mobile"
             src="photo/caleb-_hnL_961xTk-unsplash 1.png"
             alt="コーヒー風景2"
           />
@@ -74,36 +90,49 @@
       <h2 class="section-title">Gallery</h2>
       <p class="section-text">
         店内の風景やお客様とのひととき。<br />
-        やさしい光が差し込む空間と、こだわりのコーヒーの香りが伝わるような、<br />
+        やさしい光が差し込む空間と、こだわりの<br />コーヒーの香りが伝わるような、<br />
         そんな瞬間を写真に収めました。
       </p>
     </section>
-    <section class="section menu">
+    <section class=" section menu">
       <h2 class="section-title">Menu</h2>
-
-      <div class="menu-table">
-        <div class="menu-item">
-          <span>エスプレッソ</span><span>Single ¥300 / Double ¥350</span>
-        </div>
-        <div class="menu-item">
-          <span>ラテ</span><span>Single ¥380 / Double ¥450</span>
-        </div>
-        <div class="menu-item">
-          <span>カフェモカ</span><span>Single ¥430 / Double ¥480</span>
-        </div>
-        <div class="menu-item">
-          <span>アイスコーヒー</span><span>Single ¥400 / Double ¥450</span>
-        </div>
-        <div class="menu-item">
-          <span>季節のブレンド</span>
-          <span>¥500〜</span>
-        </div>
-      </div>
-
-      <p class="menu-note">
-        ※季節によって限定スイーツやドリンクもご用意しています。
-      </p>
-
+      <table class="menu-table">
+        <tbody>
+          <tr>
+            <td>エスプレッソ</td>
+            <td><span class="label">Single</span> ¥300</td>
+            <td>/</td>
+            <td><span class="label">Double</span> ¥350</td>
+          </tr>
+          <tr>
+            <td>ラテ</td>
+            <td><span class="label">Single</span> ¥380</td>
+            <td>/</td>
+            <td ><span class="label">Double</span> ¥450</td>
+          </tr>
+          <tr>
+            <td>カフェモカ</td>
+            <td><span class="label">Single</span>¥430</td>
+            <td>/</td>
+            <td><span class="label">Double</span>¥480</td>
+          </tr>
+          <tr>
+            <td>アイスコーヒー</td>
+            <td><span class="label">Single</span> ¥400</td>
+            <td>/</td>
+            <td><span class="label">Double</span> ¥450</td>
+          </tr>
+          <tr>
+            <td>季節のブレンド</td>
+            <td>¥500~</td>
+            <td><strong>-</strong></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="menu-note">※季節によって限定スイーツやドリンクもご用意しています。</p>
+    </section>
+    
       <div class="menu-gallery">
         <div class="menu-gallery-item">
           <img
@@ -112,7 +141,7 @@
           />
           <h3>As your living room</h3>
           <p>
-            心地よい音楽と木の香りに包まれながら、おひとりでも、誰かと一緒でも、気ままに過ごせる空間を目指しました。<br />まるで自分のリビングのように、気ままにくつろげる時間を。
+            心地よい音楽と木の香りに包まれながら、おひとりでも、誰かと<br />一緒でも、気ままに過ごせる空間を目指しました。<br><br>まるで自分のリビングのように、気ままにくつろげる時間を。
           </p>
         </div>
         <div class="menu-gallery-item">
@@ -121,8 +150,8 @@
             alt="カフェのインテリアデザイン"
           />
           <h3>Interior design</h3>
-          <p>
-            店内のデザインは「余白と光」をテーマに。<br />家具はすべてナチュラル素材を使用し、時間帯によって表情を変える店内の雰囲気を楽しめます。
+          <p class="interior-desin-text">
+            店内のデザインは「余白と光」をテーマに。<br><br>家具はすべてナチュラル素材を使用し、時間帯に<br />よって表情を変える店内の雰囲気を楽しめます。
           </p>
         </div>
       </div>
@@ -137,5 +166,22 @@
       </div>
       <div class="barista-brand">Cafe Lumière</div>
     </section>
+    <script>
+   function openMenu() {
+    const menu = document.getElementById('fullscreenMenu');
+    menu.style.display = 'flex'; // 表示
+    setTimeout(() => {
+      menu.classList.add('show');
+    }, 10); // 少し遅延してクラス付与（アニメーション用）
+  }
+
+  function closeMenu() {
+    const menu = document.getElementById('fullscreenMenu');
+    menu.classList.remove('show');
+    setTimeout(() => {
+      menu.style.display = 'none';
+    }, 500); // アニメーション時間と合わせて非表示
+  }
+    </script>
   </body>
 </html>
