@@ -48,41 +48,16 @@
     <section class="section coffee">
       <h2 class="section-title">Tasty coffee</h2>
       <p class=" tasty-text section-text">
-        素材にこだわった豆を使用し、バリスタが一杯ずつ<br />丁寧にドリップ。<br />
-        Lumièreブレンドは、香り・コク・後味のバランスが<br />取れた人気の一杯です。<br />
-        ホットでもアイスでも楽しめるよう、抽出方法も季<br />節に合わせてご提供しています。
+        素材にこだわった豆を使用し、バリスタが一杯ずつ<br class="sp_only ">丁寧にドリップ。<br />
+        Lumièreブレンドは、香り・コク・後味のバランスが<br class="sp_only ">取れた人気の一杯です。<br />
+        ホットでもアイスでも楽しめるよう、抽出方法も季<br class="sp_only ">節に合わせてご提供しています。
       </p>
       <div class="image-grid">
-        <div class="top-images">
-          <img
-            class="span-2 top-image"
-            src="photo/kris-atomic-3b2tADGAWnU-unsplash 1.png"
-            alt="コーヒー風景1"
-          />
-          <img
-            class="top-image hide-on-mobile"
-            src="photo/caleb-_hnL_961xTk-unsplash 1.png"
-            alt="コーヒー風景2"
-          />
-        </div>
-
-        <div class="bottom-images">
-          <img
-            class="exterior"
-            src="photo/illia-kholin-vrP08kW-W24-unsplash 1.png"
-            alt="店内写真1"
-          />
-          <img
-            class="interior_view"
-            src="photo/ian-baldwin-Dlj-SxxTlQ0-unsplash 1.png"
-            alt="店内写真2"
-          />
-          <img
-            class="brewing_coffee"
-            src="photo/chase-eggenberger-EE3gVc9fq08-unsplash 1.png"
-            alt="店内写真3"
-          />
-        </div>
+        <img src="photo/kris-atomic-3b2tADGAWnU-unsplash 1.png" alt="コーヒー風景1" />
+        <img class="coffee-img" src="photo/caleb-_hnL_961xTk-unsplash 1.png" alt="コーヒー風景2" />
+        <img src="photo/illia-kholin-vrP08kW-W24-unsplash 1.png" alt="店内写真1" />
+        <img src="photo/ian-baldwin-Dlj-SxxTlQ0-unsplash 1.png" alt="店内写真2" />
+        <img src="photo/chase-eggenberger-EE3gVc9fq08-unsplash 1.png" alt="店内写真3" />
       </div>
     </section>
 
@@ -90,50 +65,61 @@
       <h2 class="section-title">Gallery</h2>
       <p class="section-text">
         店内の風景やお客様とのひととき。<br />
-        やさしい光が差し込む空間と、こだわりの<br />コーヒーの香りが伝わるような、<br />
+        やさしい光が差し込む空間と、こだわりの<br class="sp_only ">コーヒーの香りが伝わるような、<br />
         そんな瞬間を写真に収めました。
       </p>
     </section>
-    <section class=" section menu">
+    <section class="section menu">
       <h2 class="section-title">Menu</h2>
       <table class="menu-table">
         <tbody>
           <tr>
             <td>エスプレッソ</td>
-            <td><span class="label">Single</span> ¥300</td>
-            <td>/</td>
-            <td><span class="label">Double</span> ¥350</td>
+            <td>
+              <div class="price-block">
+                <div class="sp_label">Single</div>
+                <div> <span class="pc-label">Single</span> ¥300</div>
+              </div>
+            </td>
+            <td class="hide-on-mobile">/</td>
+            <td>
+              <div class="price-block">
+                <div class="sp_label">Double</div>
+                <div><span class="pc-label">Double</span>¥350</div>
+              </div>
+            </td>
           </tr>
           <tr>
             <td>ラテ</td>
-            <td><span class="label">Single</span> ¥380</td>
-            <td>/</td>
-            <td ><span class="label">Double</span> ¥450</td>
+            <td><span class="pc-label">Single</span>¥380</td>
+            <td class="hide-on-mobile">/</td>
+            <td><span class="pc-label">Double</span>¥450</td>
           </tr>
           <tr>
             <td>カフェモカ</td>
-            <td><span class="label">Single</span>¥430</td>
-            <td>/</td>
-            <td><span class="label">Double</span>¥480</td>
+            <td><span class="pc-label">Single</span>¥430</td>
+            <td class="hide-on-mobile">/</td>
+            <td><span class="pc-label">Double</span>¥480</td>
           </tr>
           <tr>
             <td>アイスコーヒー</td>
-            <td><span class="label">Single</span> ¥400</td>
-            <td>/</td>
-            <td><span class="label">Double</span> ¥450</td>
+            <td><span class="pc-label">Single</span>¥400</td>
+            <td class="hide-on-mobile">/</td>
+            <td><span class="pc-label">Double</span>¥450</td>
           </tr>
           <tr>
             <td>季節のブレンド</td>
-            <td>¥500~</td>
-            <td><strong>-</strong></td>
-            <td></td>
+            <td>¥500</td>
+            <td>/</td>
+            <td>-</td>
           </tr>
         </tbody>
       </table>
+    
       <p class="menu-note">※季節によって限定スイーツやドリンクもご用意しています。</p>
     </section>
     
-      <div class="menu-gallery">
+      <section class="section menu-gallery">
         <div class="menu-gallery-item">
           <img
             src="photo/timothy-barlin-vZS5xNQ8iHc-unsplash 1.png"
@@ -141,7 +127,7 @@
           />
           <h3>As your living room</h3>
           <p>
-            心地よい音楽と木の香りに包まれながら、おひとりでも、誰かと<br />一緒でも、気ままに過ごせる空間を目指しました。<br><br>まるで自分のリビングのように、気ままにくつろげる時間を。
+            心地よい音楽と木の香りに包まれながら、おひとりでも、誰かと<br class="sp_only ">一緒でも、気ままに過ごせる空間を目指しました。<br><br>まるで自分のリビングのように、気ままにくつろげる時間を。
           </p>
         </div>
         <div class="menu-gallery-item">
@@ -151,17 +137,17 @@
           />
           <h3>Interior design</h3>
           <p class="interior-desin-text">
-            店内のデザインは「余白と光」をテーマに。<br><br>家具はすべてナチュラル素材を使用し、時間帯に<br />よって表情を変える店内の雰囲気を楽しめます。
+            店内のデザインは「余白と光」をテーマに。<br><br>家具はすべてナチュラル素材を使用し、時間帯に<br class="sp_only ">よって表情を変える店内の雰囲気を楽しめます。
           </p>
         </div>
-      </div>
+      </section>
     </section>
     <section class="barista-section">
       <div class="barista-content">
         <h2 class="barista-title">Our barista</h2>
         <p class="barista-text">
-          確かな技術とやさしさで、お客様にぴったりの一杯をお届けします。<br />
-          初めての方もお気軽に、おすすめを聞いてみてくださいね。
+          確かな技術とやさしさで、お客様にぴったりの一杯を<br class="sp_only ">お届けします。<br />
+          初めての方もお気軽に、おすすめを聞いてみてくださ<br class="sp_only ">いね。
         </p>
       </div>
       <div class="barista-brand">Cafe Lumière</div>
