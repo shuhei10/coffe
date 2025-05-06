@@ -355,17 +355,17 @@ body {
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 300px 259px;
-    height: 26vh;
+    height: 24vh;
     background-size: contain;
   }
 
   .hero::before {
-    height: 26%;
+    height: 24%;
   }
 
   .hero-text {
     position: absolute;
-    top: 52%;
+    top: 46%;
     left: 8%;
     transform: translateY(-50%);
     text-align: left;
@@ -439,7 +439,7 @@ body {
   }
 
   .menu-table {
-    margin: 0px auto 0px 100px;
+    margin: 0px auto 0px 0px;
   }
 
   .menu-table td {
@@ -508,7 +508,7 @@ body {
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 398px 199px;
-    height: 19vh;
+    height: 18vh;
     background-size: contain;
   }
 
@@ -518,8 +518,8 @@ body {
 
   .barista-title {
     font-size: 1.7rem;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-top: 30px;
   }
 
   .barista-text {
@@ -529,7 +529,7 @@ body {
 
   .barista-brand {
     font-size: 1rem;
-    margin: 15px 0 0 0;
+    margin: 0;
     text-align: center;
   }
 }
